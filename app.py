@@ -14,7 +14,8 @@ st.set_page_config(layout="wide")
 
 st.title("Utah Remote Sensing Interface | Static Snow Comparisons | 2022 vs 2023")
 # ee.Authenticate(st.secrets["EARTHENGINE_TOKEN"])
-ee.Initialize(st.secrets["EARTHENGINE_TOKEN"])
+geemap.ee_initialize()
+# ee.Initialize()
 
 today = datetime.datetime.today()
 start_date = '2022-04-07' #today - datetime.timedelta(days=365)
