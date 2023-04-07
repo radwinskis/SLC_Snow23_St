@@ -8,14 +8,14 @@ from datetime import date
 import datetime
 from RadGEEToolbox import LandsatCollection, CollectionStitch, LandsatCollection2
 
-#os.environ["EARTHENGINE_TOKEN"] == st.secrets["EARTHENGINE_TOKEN"]
+# os.environ["EARTHENGINE_TOKEN"] == st.secrets["EARTHENGINE_TOKEN"]
 
 st.set_page_config(layout="wide")
 
 st.title("Utah Remote Sensing Interface | Static Snow Comparisons | 2022 vs 2023")
-
+ee.Authenticate(st.secrets["EARTHENGINE_TOKEN"])
 ee.Initialize()
-ee.Authenticate()
+
 today = datetime.datetime.today()
 start_date = '2022-04-07' #today - datetime.timedelta(days=365)
 end_date = '2023-04-10' #today.strftime('%Y-%m-%d')
