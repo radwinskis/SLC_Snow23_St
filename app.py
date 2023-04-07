@@ -19,7 +19,7 @@ geemap.ee_initialize()
 
 today = datetime.datetime.today()
 start_date = '2022-04-07' #today - datetime.timedelta(days=365)
-end_date = '2023-04-10' #today.strftime('%Y-%m-%d')
+end_date = '2023-04-20' #today.strftime('%Y-%m-%d')
 
 # Function to generate the satellite imagery
 @st.cache_resource(show_spinner="Fetching map data...")
@@ -250,6 +250,7 @@ def main():
 
 st.write('*Contact: markradwin@gmail.com* | Earth Observations Geoscientist')
 st.write('*Affiliation: University of Utah - Geology & Geophysics Dept.*')    
+st.write('Note: This app will automatically update the Map 1 imagery to include an April 2023 image, if and when available.')
 
 if __name__ == "__main__":
     main()
