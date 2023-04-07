@@ -1,5 +1,6 @@
 click==8.0.4
 streamlit
+streamlit-folium
 geemap
 ee
 datetime
