@@ -4,4 +4,3 @@ geemap
 ee
 datetime
 folium
-folium-plugins
