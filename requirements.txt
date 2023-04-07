@@ -4,3 +4,4 @@ geemap
 ee
 datetime
 folium
+plotly
